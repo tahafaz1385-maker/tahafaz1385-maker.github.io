@@ -10,6 +10,9 @@ header,main,footer,nav{
     min-height: 10vh;
 
 }
+header nav{
+    background-color: #a7c7e7;
+}
 main{
     min-height: 100vh;
     display: grid;
