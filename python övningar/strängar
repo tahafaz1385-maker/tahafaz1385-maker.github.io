@@ -1,0 +1,78 @@
+# #Mer om strängar
+# str1 = "Hello World"
+# str2 = 'Hello World'
+# #strängar == listor??
+# # print(str1[4])
+# # #slicing
+# # print(str1[1:4])
+# # print(str1[3:-2])
+# #Strängar är immutable, går inte att ändra efter det är skapat
+# #str1[4] = "ö"  - går inte att göra
+# #Mutliline strängar
+# str4 = """Detta är en
+# sträng som är väldigt
+# lång och på flera rader"""
+# #print(str4)
+# #Jämföra strängar
+# str1 = "Hello World"
+# str2 = "hello World"
+# str3 = 'hello World'
+# print(str1 == str2)
+# print(str2 == str3)
+#iterera (loopa) igenom en sträng
+# for i in range(len(str1)):
+#     print(str1[i], end=" ")
+# print()
+# for bokstav in str1:
+#     print(bokstav, end=" ")
+# print()
+# print("a" in str1)
+# print("llo" in str1)
+# #isnumeric()
+# s1 = "10"
+# s2 = "10e"
+# print(s1.isnumeric())
+# print(s2.isnumeric())
+# #Escape sequence/character
+# print("\n  a\tb ")
+# print("\\")
+#string formatting  f""
+# namn = "stefan"
+# stad = "halmstad"
+# ålder = 51
+# print(f"Hej {namn} i {stad}. Omg du är {ålder}")
+#upper() // lower()
+ 
+# namn = "StEfAn"
+# print(namn.upper())
+# print(namn.lower())
+# namn = namn.lower()
+# print(namn)
+# #split
+# text ="Detta en text med några ord"
+# splittad_sträng = text.split()
+# print(splittad_sträng)
+# text2 = "Detta*är*en*text*med*sjärnor"
+# spl2= text2.split("*")
+# print(spl2)
+# lista = ["a", "bertil", "c"]
+# text3 = "".join(lista)
+# print(text3)
+# nysträng = ""
+# for s in lista:
+#     nysträng += s + " "
+# print(nysträng)
+
+
+# text = "Taha"
+# print(text[0])
+# print(text[3])
+
+# text = "taha fazeli"
+# print(text[0:3])
+# print(text[8:11])
+
+# förnamn = "taha"
+# efternamn = "fazeli"
+# print(f"{förnamn} {efternamn}")
+
