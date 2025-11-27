@@ -8,6 +8,7 @@ add items with image and button and you can also add another website that custom
 ### button
 add java script to button if it possible
 # footer
-make it more batter through css
+make it more batter through css 
 ### button for footer
 think about that before you're gonna do it!
+
