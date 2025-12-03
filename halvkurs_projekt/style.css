@@ -10,23 +10,31 @@ header,main,footer,nav{
     min-height: 10vh;
 
 }
+
+header nav{
+    display: grid;
+
+}
 img{
     width: 100%;
 }
 .imgbox{
     aspect-ratio: 1/1;
-    border: 2px solid white;
+    border: 2px solid #F7F2EA;
 }
 .imgbox img{
     height: 100%;
     object-fit: cover;
 }
 .card h1{
-    text-align: center;
+    text-align: center; 
+    color: #6B2F1A;
+    
 }
 main{
     min-height: 100vh;
     display: grid;
+    background-color: #F7F2EA;
 }
 html{
     scroll-behavior: smooth;
@@ -54,7 +62,7 @@ footer p{
 @media (min-width: 600px){
     #nav{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         place-items: center;
 
     }
