@@ -21,10 +21,19 @@ img{
 .imgbox{
     aspect-ratio: 1/1;
     border: 2px solid #F7F2EA;
+    
+    
+
 }
+.card{
+    display: grid;
+    place-items: center;
+}
+
 .imgbox img{
     height: 100%;
     object-fit: cover;
+   
 }
 .card h1{
     text-align: center; 
@@ -32,7 +41,7 @@ img{
     
 }
 main{
-    min-height: 100vh;
+    
     display: grid;
     background-color: #F7F2EA;
 }
@@ -59,6 +68,35 @@ footer p{
 }
 
 
+.meny_main{
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 85vw);
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.card_meny{
+    border: 1px solid black;
+    padding: 3%;
+    scroll-snap-align: center;
+
+}
+.imgbox_meny{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+
+}
+ 
+ .imgbox_meny .latte{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+ }
+
+
+
 @media (min-width: 600px){
     #nav{
         display: grid;
@@ -69,4 +107,9 @@ footer p{
     .menubutton{
         display: none;
     }
+    .meny_main{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
 }
