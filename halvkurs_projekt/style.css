@@ -94,6 +94,29 @@ footer p{
     display: block;
     object-fit: cover;
  }
+ .card_meny h2{
+    text-align: center;
+ }
+ 
+ 
+ .imgbox_latte{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+
+}
+.card_latte_info{
+    border: 1px solid black;
+    padding: 3%;
+    scroll-snap-align: center;
+
+}
+
+.imgbox_latte .latte{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+ }
 
 
 
