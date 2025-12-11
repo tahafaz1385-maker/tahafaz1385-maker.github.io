@@ -105,11 +105,16 @@ footer p{
 
 }
 .card_latte_info{
-    border: 1px solid black;
+    border:1px solid #ddd;
     padding: 3%;
     scroll-snap-align: center;
 
+
+ 
 }
+
+
+
 
 .imgbox_latte .latte{
     height: 100%;
@@ -133,6 +138,27 @@ footer p{
     .meny_main{
         grid-template-columns: 1fr 1fr;
 
+    }
+
+    .card_latte_info{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap:30px;
+       
+    }
+
+}
+
+
+@media (min-width: 1000px){
+    .card_latte_info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:30px;
+      
+    }
+    .main_product{
+        padding-inline: 20%;
     }
 
 }
