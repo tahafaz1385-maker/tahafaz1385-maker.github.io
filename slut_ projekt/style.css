@@ -1,0 +1,25 @@
+header,main,footer,nav,.card{
+
+    border: 1px solid black;
+    padding: 4%;
+
+
+
+}
+
+
+nav{
+
+   
+    display: flex;
+    gap:20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    height: 55vh;
+}
