@@ -22,10 +22,10 @@ a{
 }
 
 main{
-    height: 55vh;
+    height: 1000vh;
 }
 
-/* menu button */
+/* manu */
 .hidden{
     height: 0;
     margin-left: -110vw;
@@ -42,6 +42,25 @@ header nav{
     border: none;
     font-size: 4rem;
 }
+/* item button */
+.item_button{
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+/* item picture */
+.imgbox_meny{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+
+}
+ 
+ .imgbox_meny .itempic{
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+ }
 
 @media (min-width: 600px){
     #nav{
@@ -53,6 +72,17 @@ header nav{
     .menubutton{
         display: none;
     }
+    .meny_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .card_many{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap:30px;
+       
+    }
+
     
 }
-
