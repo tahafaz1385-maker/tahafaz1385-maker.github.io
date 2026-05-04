@@ -77,14 +77,44 @@ header nav{
 
 }
 /* item individual website */
-.card_item_info .drinks{
+
+.imgbox_meny{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
+
+}
+ 
+ .imgbox_meny .drinks{
     height: 100%;
     width: 100%;
     display: block;
     object-fit: cover;
+ }
+ .card_meny h2{
+    text-align: center;
+ }
+ 
+ 
+ .imgbox_meny{
+    border: 1px solid black;
+    aspect-ratio: 1/1;
 
 }
-
+.card_item_info{
+    border:1px solid #ddd;
+    padding: 3%;
+    scroll-snap-align: center;
+}
+.row_div{
+    display:grid;
+    grid-template-rows: 1fr auto;
+}
+.latte_button{
+    font-size:1rem;
+    background:white;
+    color:black;
+    border-radius: 8px;
+}
 @media (min-width: 600px){
     #nav{
         display: grid;
@@ -102,15 +132,17 @@ header nav{
     }
     .card_meny{
         display: grid;
+        gap:30px;
+        text-align: center;
+    }
+    .card_item_info{
+        display: grid;
         grid-template-columns: 2fr 1fr;
         gap:30px;
+        
        
     }
-    .card_meny h2{
-        grid-column: 1 / -1; /* rubriken sträcker sig över ALLA kolumner. Det kommer centreras över hela kortet*/
-        text-align: center;
-        
-    }
+
     
     
 }
