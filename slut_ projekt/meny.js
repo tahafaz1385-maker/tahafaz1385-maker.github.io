@@ -2,20 +2,22 @@
 function contentSearch(s){
 
     s = s.toLowerCase();
-    const content = document.querySelectorAll(".card_meny");
+    const divs = document.querySelectorAll(".card_meny");
     
     
 
-    for( let div of content){
-       console.log(div.children[0].innerText);
-       
-       
-       
-       
-       
-        /*let title = div.children[0].innerText
-        let result = title.toLowerCase().search(s)
+    for( let div of divs){
+        div.classList.remove("hidden");
 
-        console.log(result)*/
+       let title = div.children[0].innerText;
+       let result = title.toLowerCase().search(s);
+
+        if(result < 0){
+
+            div.classList.add("hidden");
+        }
+
     }
+       
+      
 }
