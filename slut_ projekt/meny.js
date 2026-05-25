@@ -7,17 +7,18 @@ function contentSearch(s){
     
 
     for( let div of divs){
-        div.classList.remove("hidden");
+        div.classList.remove("invisible");
 
-       let title = div.children[0].innerText;
+       let title = div.querySelector("h2").innerText;
        let result = title.toLowerCase().search(s);
 
         if(result < 0){
-
-            div.classList.add("hidden");
+            div.classList.add("invisible");
         }
 
     }
+
+    console.log(divs);
        
       
 }
