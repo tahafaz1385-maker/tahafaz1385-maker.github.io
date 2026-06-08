@@ -121,11 +121,11 @@ header nav{
 /* search bar */
 
 #search {
-    padding: 10px 18px; /* top ------ bottom */
+    padding: 10px 18px; /* top och bottom */
     border: 2px solid #4a2c0a;
     border-radius: 999px; /* full round */
     
-    color: #f5e6d0;
+    color: black;
     font-size: 0.95rem;
     outline: none;
     width: 220px;
@@ -146,6 +146,60 @@ header {
     display: grid;
     gap: 20px;
 }
+/* home page slider */
+
+
+
+ .slider {
+  width: 100%;
+  overflow: hidden;
+  background: #1a1a1a;
+}
+
+.imgbox_home {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  animation: slide 70s linear infinite;
+}
+
+.imgbox_home img.drinks {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+  .imgbox_home img.drinks {
+    width: 140px;
+    height: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .imgbox_home img.drinks {
+    width: 110px;
+    height: 60vh;
+  }
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;  /* main tar upp all ledig plats*/
+}
+
 
 
 @media (min-width: 600px){
